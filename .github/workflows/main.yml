@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+    branches: 
+      - master
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: pack
+      run: |
+        choco pack
+    - name: install
+      run: |
+        choco install -y colemak -dv -s .
