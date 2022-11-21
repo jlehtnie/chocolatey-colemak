@@ -14,3 +14,8 @@ jobs:
     - name: install
       run: |
         choco install -y colemak -dv -s .
+    - name: push
+      env:
+        api_key: ${{ secrets.choco_api_key }}
+      run: |
+        choco push -k="$ENV:api_key"
