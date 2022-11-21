@@ -1,9 +1,9 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 
 $packageName= 'colemak'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url        = 'https://skozl.com/s/colemak-caps.zip'
+$url        = 'https://colemak.com/wiki/images/3/33/Colemak-caps.zip'
 
 $locale = 'EN'
 $arch = 'i386'
